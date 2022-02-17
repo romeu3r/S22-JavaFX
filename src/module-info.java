@@ -1,7 +1,7 @@
-module com.example.s22javafx {
+module javaFx {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
+    requires javafx.graphics;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
@@ -11,5 +11,6 @@ module com.example.s22javafx {
     requires eu.hansolo.tilesfx;
 
     opens application to javafx.fxml;
+    exports gui;
     exports application;
 }
